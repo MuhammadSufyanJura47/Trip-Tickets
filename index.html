@@ -244,6 +244,47 @@
             margin-bottom: 2rem;
         }
         
+        .download-header {
+            background: linear-gradient(135deg, var(--numl-blue), var(--ncrs-green));
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .download-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .download-logo {
+            height: 70px;
+            margin: 0 1rem;
+        }
+        
+        .download-header-text {
+            text-align: center;
+        }
+        
+        .download-university-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+        
+        .download-society-name {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        .download-trip-heading {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
         @media (max-width: 768px) {
             .logo-container {
                 flex-direction: column;
@@ -502,16 +543,16 @@
     <div id="ticketDownloadContainer">
         <!-- Main Ticket for Download -->
         <div class="download-ticket mb-4">
-            <div class="ticket-header">
-                <div class="logo-container">
-                    <img src="NUML Logo.png" alt="NUML Logo" class="logo">
-                    <div class="header-text">
-                        <h1 class="university-name">National University of Modern Languages</h1>
-                        <h2 class="society-name">NUML Computing Society Rawalpindi</h2>
+            <div class="download-header">
+                <div class="download-logo-container">
+                    <img src="NUML Logo.png" alt="NUML Logo" class="download-logo">
+                    <div class="download-header-text">
+                        <h1 class="download-university-name">National University of Modern Languages</h1>
+                        <h2 class="download-society-name">NUML Computing Society Rawalpindi</h2>
                     </div>
-                    <img src="NCSR Logo.png" alt="NCSR Logo" class="logo">
+                    <img src="NCSR Logo.png" alt="NCSR Logo" class="download-logo">
                 </div>
-                <h1 class="trip-heading">Trip to Murree Hills 2025</h1>
+                <h1 class="download-trip-heading">Trip to Murree Hills 2025</h1>
                 <p class="mb-0">Organized by NCSR</p>
             </div>
             
@@ -562,7 +603,7 @@
         
         <!-- Ticket Counterfoil for Download -->
         <div class="download-ticket">
-            <div class="ticket-header">
+            <div class="download-header">
                 <h4 class="mb-0">Ticket Counterfoil</h4>
             </div>
             
